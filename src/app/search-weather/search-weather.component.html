@@ -1,0 +1,10 @@
+<section [ngClass]="checked ? 'weather-search-light' : 'weather-search'">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <input placeholder="Enter city name" autocomplete="off" name="location" ngModel type="text" id="city" required
+      #location="ngModel" (input)="onSearchLocation(input.value)" #input>
+    <button type="submit">Add City</button>
+  </form>
+  <div class="result">
+    <span class="info">City found: </span><span class="info-cityname">{{ data.name }}</span>
+  </div>
+</section>

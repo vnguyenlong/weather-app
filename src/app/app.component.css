@@ -1,0 +1,108 @@
+main {
+  height: 100%;
+}
+#title {
+  position: relative;
+  padding: 30px;
+  margin-top: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.h1Light {
+  background-color: rgb(218, 254, 255);
+  color: rgb(67, 32, 223);
+}
+
+.h1Dark {
+  background-color: rgb(8, 9, 58);
+  color: #f1c40f;
+}
+
+mat-slide-toggle {
+  position: absolute;
+  bottom: 42%;
+  right: 36px;
+  font-size: 18px;
+  color: rgb(245, 221, 9);
+}
+
+.toggleChecked {
+  color: rgb(67, 32, 223);
+  background: linear-gradient(-45deg, #57dee2, #c1ffff, #49e4ff, #aaedf0);
+  background-size: 400% 400%;
+  animation: gradient 2.5s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 30%;
+    }
+    30% {
+        background-position: 30% 60%;
+    }
+    60% {
+        background-position: 60% 100%;
+    }
+    100% {
+        background-position: 0% 30%;
+    }
+}
+.toggleUnChecked {
+  color: #f1c40f;
+  background: linear-gradient(-45deg, rgb(24, 39, 126), #180f4e, #3d018b, #0d113a);
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 30%;
+    }
+    30% {
+        background-position: 30% 60%;
+    }
+    60% {
+        background-position: 60% 100%;
+    }
+    100% {
+        background-position: 0% 30%;
+    }
+}
+
+mat-slide-toggle-content {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mat-slide-toggle .mat-slide-toggle-bar {
+    background-color: #ffffff;
+}
+
+.mat-slide-toggle .mat-slide-toggle-thumb {
+    background-color: #ecde13;
+}
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #00e6f7;
+}
+
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #7500d4;
+}
+
+main {
+  padding: 0;
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    background: linear-gradient(-45deg, rgb(24, 35, 134), #180f4e, #310070, #0d113a);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
